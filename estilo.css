@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Background geral */
+body {
+    background-color: #eaf4fc; /* azul clarinho */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #003049;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 6px;
+}
+
+.telefones {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #fcbf49;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #003049, #264653);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    font-family: "EB Garamond", serif;
+}
+
+.btn {
+    background-color: #fcbf49;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e09f3e;
+}
+
+/* Services */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #003049;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff; /* fundo branco atrás das imagens */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    background-color: #fff; /* garante fundo branco */
+    padding: 10px;
+    border-radius: 6px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #264653;
+}
+
+/* Brands */
+.brands {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.brands h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #003049;
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.brand-logos img {
+    background-color: #fff; /* fundo branco */
+    padding: 8px;
+    border-radius: 6px;
+    height: 60px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.brand-logos img:hover {
+    filter: grayscale(0%);
+}
+
+/* Endereços */
+.enderecos {
+    background-color: transparent;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.enderecos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #003049;
+}
+
+.enderecos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.endereco {
+    background-color: #fff; /* fundo branco para cards de endereço */
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.endereco h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #264653;
+}
+
+.endereco p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #003049;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+/* Tablet */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-logos {
+    gap: 1rem;
+  }
+
+  .enderecos-grid {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .telefones span {
+    font-size: 0.9rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    height: 60px;
+  }
+
+  .brand-logos img {
+    height: 50px;
+  }
+
+  .endereco {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
