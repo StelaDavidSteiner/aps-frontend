@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa do Micro-ondas - Curitiba</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <header class="header">
+  <div class="container header-content">
+    <div class="logo-container">
+      <img src="imagens/logo.jpg" alt="Casa do Microondas" class="logo" />
+      <div class="telefones">
+        <span>(41) 3332-8000</span>
+        <span>(41) 98516-3600</span>
+      </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre-nos.html">Localização</a></li>
+        <li><a href="/envie-seus-dados.html">Busca e Entrega</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="form-contato-container">
+    <h2 class="form-contato-titulo">Preencha o formulário Abaixo</h2>
+    <p class="form-contato-subtitulo">
+      Entre em contato através de nosso formulário, lhe responderemos o mais breve possível!
+    </p>
+
+<form id="form-contato" class="form-contato-formulario" action="#" method="post">
+  <label class="form-contato-label" for="nome">Nome:</label>
+  <input class="form-contato-input" type="text" id="nome" name="nome" required />
+
+  <label class="form-contato-label" for="email">E-mail:</label>
+  <input class="form-contato-input" type="email" id="email" name="email" required />
+
+  <label class="form-contato-label" for="assunto">Assunto:</label>
+  <input class="form-contato-input" type="text" id="assunto" name="assunto" />
+
+  <label class="form-contato-label" for="telefone">Telefone:</label>
+  <input class="form-contato-input" type="tel" id="telefone" name="telefone" />
+
+  <label class="form-contato-label" for="mensagem">Mensagem:</label>
+  <textarea class="form-contato-textarea" id="mensagem" name="mensagem" rows="5"></textarea>
+
+  <button class="form-contato-botao" type="submit">Enviar</button>
+
+  <p id="form-contato-msg"></p> 
+</form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
