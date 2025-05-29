@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +7,8 @@
     font-family: 'Rubik', sans-serif;
 }
 
-/* Background geral */
 body {
-    background-color: #eaf4fc; /* azul clarinho */
+    background-color: #eaf4fc;
     color: #333;
     line-height: 1.6;
 }
@@ -21,7 +19,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
 .header {
     background-color: #003049;
     color: #fff;
@@ -71,7 +68,6 @@ body {
     color: #fcbf49;
 }
 
-/* Hero */
 .hero {
     background: linear-gradient(to right, #003049, #264653);
     color: #fff;
@@ -106,7 +102,6 @@ body {
     background-color: #e09f3e;
 }
 
-/* Services */
 .services {
     padding: 60px 20px;
     text-align: center;
@@ -126,7 +121,7 @@ body {
 }
 
 .card {
-    background-color: #fff; /* fundo branco atrás das imagens */
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -138,7 +133,7 @@ body {
 }
 
 .card img {
-    background-color: #fff; /* garante fundo branco */
+    background-color: #fff;
     padding: 10px;
     border-radius: 6px;
     height: 80px;
@@ -150,7 +145,6 @@ body {
     color: #264653;
 }
 
-/* Brands */
 .brands {
     padding: 40px 20px;
     text-align: center;
@@ -171,7 +165,7 @@ body {
 }
 
 .brand-logos img {
-    background-color: #fff; /* fundo branco */
+    background-color: #fff;
     padding: 8px;
     border-radius: 6px;
     height: 60px;
@@ -183,7 +177,6 @@ body {
     filter: grayscale(0%);
 }
 
-/* Endereços */
 .enderecos {
     background-color: transparent;
     padding: 60px 20px;
@@ -204,11 +197,16 @@ body {
 }
 
 .endereco {
-    background-color: #fff; /* fundo branco para cards de endereço */
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     width: 280px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.endereco:hover {
+    transform: translateY(-5px);
 }
 
 .endereco h3 {
@@ -222,7 +220,6 @@ body {
     color: #555;
 }
 
-/* Footer */
 .footer {
     background-color: #003049;
     color: #fff;
@@ -231,8 +228,62 @@ body {
     font-size: 0.9rem;
 }
 
-/* Media Queries */
-/* Tablet */
+.conserto-30 {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #000;
+}
+
+.conserto-30 h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #c1121f;
+  text-transform: uppercase;
+}
+
+.conserto-30 h2 span {
+  color: #000;
+}
+
+.conserto-box {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.conserto-box ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.conserto-box li {
+  margin-bottom: 15px;
+  list-style-type: disc;
+}
+
+.conserto-box strong {
+  color: #000;
+}
+
+.conserto-box .incluso {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.conserto-box .grato {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
@@ -262,7 +313,6 @@ body {
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
